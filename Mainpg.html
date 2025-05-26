@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAKHANGBA Official Top-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    
+    <header class="header">
+        <img src="logo.png"
+            alt="Logo" class="logo"
+            style="height: 45px;">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search games..." aria-label="Search games">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="gallery-container">
+            <div class="gallery-track" id="galleryTrack">
+                <div class="gallery-item">
+                    <img src="COC.jpg" alt="Clash of Clans Offer" class="gallery-image" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="pg7.jpg" alt="Mobile Legends Offer" class="gallery-image" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="pg5.jpg" alt="BGMI Offer" class="gallery-image" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="pg6.jpg" alt="Clash Of Clans Offer" class="gallery-image" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="pg3.jpg" alt="Honor Of Kings" class="gallery-image" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="pg2.jpg" alt="PUBG Mobile Offer" class="gallery-image" loading="lazy">
+                </div>
+            </div>
+            <button class="gallery-nav prev" aria-label="Previous slide">❮</button>
+            <button class="gallery-nav next" aria-label="Next slide">❯</button>
+            <div class="gallery-indicators" id="galleryIndicators"></div>
+        </div>
+        
+        <!-- Section Header -->
+        <div class="section-header-container">
+            <div class="section-tabs-scrollable">
+                <div class="section-tabs">
+                    <button class="section-tab active" data-section="all" aria-controls="all-section" aria-selected="true">
+                        <div class="tab-content">
+                            <i class="fas fa-th"></i>
+                            <span>ALL</span>
+                        </div>
+                    </button>
+                    <button class="section-tab" data-section="popular" aria-controls="popular-section" aria-selected="false">
+                        <div class="tab-content">
+                            <i class="fas fa-fire"></i>
+                            <span>Popular</span>
+                        </div>
+                    </button>
+                    <button class="section-tab" data-section="new" aria-controls="new-section" aria-selected="false">
+                        <div class="tab-content">
+                            <i class="fab fa-sketch"></i>
+                            <span>MLBB</span>
+                        </div>
+                    </button>
+                    <button class="section-tab" data-section="trending" aria-controls="trending-section" aria-selected="false">
+                        <div class="tab-content">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Trending</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ALL Section -->
+        <div class="section-content active" id="all-section">
+            <div class="cards-grid">
+                <!-- Mobile Legends -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="ml-details.html">
+                            <img src="MLBB.jpg" alt="Mobile Legends Diamonds Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Mobile Legends</h6>
+                                <p class="card-subtitle">Moonton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="ml-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- PUBG Mobile -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="pubg-details.html">
+                            <img src="pubg.jpg" alt="PUBG Mobile UC Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">PUBG Mobile</h6>
+                                <p class="card-subtitle">Tencent Games</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="pubg-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Clash of Clans -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="coc-details.html">
+                            <img src="COC.jpg" alt="Clash of Clans Gems Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Clash of Clans</h6>
+                                <p class="card-subtitle">Supercell</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="coc-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- BGMI -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="bgmi-details.html">
+                            <img src="BGMI.jpg" alt="BGMI UC Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">BGMI</h6>
+                                <p class="card-subtitle">Krafton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="bgmi-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Free Fire Max -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="freefire-details.html">
+                            <img src="FREEFIRE.jpg" alt="Free Fire Max Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Free Fire Max</h6>
+                                <p class="card-subtitle">Garena</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="freefire-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Honor of Kings -->
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="hok-details.html">
+                            <img src="HOK.jpg" alt="Honor of Kings Top-Up" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Honor of Kings</h6>
+                                <p class="card-subtitle">Level Infinite</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="hok-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Popular Games Section -->
+        <div class="section-content" id="popular-section">
+            <div class="cards-grid">
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="ml-details.html">
+                            <img src="MLBB.jpg" alt="Mobile Legends" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Mobile Legends</h6>
+                                <p class="card-subtitle">Moonton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="ml-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="pubg-details.html">
+                            <img src="pubg.jpg" alt="PUBG Mobile" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">PUBG Mobile</h6>
+                                <p class="card-subtitle">Tencent Games</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="pubg-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="coc-details.html">
+                            <img src="COC.jpg" alt="Clash of Clans" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Clash of Clans</h6>
+                                <p class="card-subtitle">Supercell</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="coc-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- New Releases Section -->
+        <div class="section-content" id="new-section">
+            <div class="cards-grid">
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="hok-details.html">
+                            <img src="HOK.jpg" alt="Honor of Kings" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Honor of Kings</h6>
+                                <p class="card-subtitle">Level Infinite</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="hok-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="freefire-details.html">
+                            <img src="FREEFIRE.jpg" alt="Free Fire Max" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">Free Fire Max</h6>
+                                <p class="card-subtitle">Garena</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="freefire-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image-container">
+                        <a href="bgmi-details.html">
+                            <img src="BGMI.jpg" alt="BGMI" class="card-image">
+                            <div class="card-content">
+                                <h6 class="card-title">BGMI</h6>
+                                <p class="card-subtitle">Krafton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-button-container">
+                        <a href="bgmi-topup.html" class="card-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trending Section (Empty for now) -->
+        <div class="section-content" id="trending-section">
+            <div class="cards-grid">
+                <!-- Add trending games here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="about-section">
+            <img src="logo.png" alt="PAKHANGBA Store Logo" class="footer-logo">
+            <p>Welcome to PAKHANGBA Store! Your trusted partner for secure and instant game currency top-ups. We provide guaranteed transaction safety with 24/7 customer support.</p>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-gamepad"></i> Games</a></li>
+                <li><a href="#"><i class="fas fa-ticket-alt"></i> Vouchers</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Promotions</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="payment-methods">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <img src="upi.png" alt="UPI" aria-label="UPI Payment">
+                <img src="gpay.png" alt="GPAY" aria-label="GPAY Payment">
+                <img src="paytm.png" alt="PAYPM" aria-label="PAYTM Payment">
+                <img src="phonepe.png" alt="PHONEPE" aria-label="PHONEPE Payment">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 PAKHANGBA Store. All rights reserved.</p>
+        
+        <hr style="border: 0.8px solid black; margin: 16px 0;">
+        <hr style="border: 0.8px solid black; margin: 16px 0;">
+    </div>
+</footer>
+    
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="Mainpg.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="trending.html" class="nav-item">
+            <i class="fas fa-fire"></i>
+            <span>Trending</span>
+        </a>
+        <a href="cart.html" class="nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+        </a>
+        <a href="#" class="nav-item nav-toggle">
+            <i class="fas fa-bars"></i>
+            <span>Menu</span>
+        </a>
+    </nav>
+
+    <nav class="side-nav" id="sideNav">
+        <span class="nav-close" id="navClose">×</span>
+        <ul class="nav-links">
+            <li><a href="Mainpg.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+            <li><a href="account.html"><i class="fas fa-user"></i>Account</a></li>
+            <li><a href="support.html"><i class="fas fa-headset"></i>24/7 Customer Support</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
